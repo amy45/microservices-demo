@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: ADMIN-SERVICE
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8760/eureka
+  instance:
+    metadata-map:
+      instance-id: admindev

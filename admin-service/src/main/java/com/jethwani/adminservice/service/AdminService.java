@@ -11,6 +11,7 @@ public class AdminService {
 
     @Autowired
     private RestTemplate restTemplate;
+
     public UserMetaData getUsers(){
         UserMetaData userMetaData=restTemplate.getForEntity("http://user-service/users",UserMetaData.class).getBody();
         return userMetaData;
